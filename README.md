@@ -53,9 +53,9 @@ By the end of this playlist and repository development, I aim to:
 | 1 | Introduction to VHDL | ✅ |
 | 2 | Installing & Setting Up Tools | ✅ |
 | 3 | VHDL Basics: Entity & Architecture | ✅ |
-| 4 | Signals vs Variables | ⬜ |
-| 5 | Concurrent & Sequential Statements | ⬜ |
-| 6 | If-Else & Case Statements | ⬜ |
+| 4 | Signals vs Variables | ✅ |
+| 5 | Concurrent & Sequential Statements | ✅ |
+| 6 | If-Else & Case Statements | ✅ |
 | 7 | Loops in VHDL | ⬜ |
 | 8 | Processes | ⬜ |
 | 9 | Testbench Basics | ⬜ |
