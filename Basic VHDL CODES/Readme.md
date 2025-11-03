@@ -25,7 +25,7 @@ Below you’ll find a description of each file, and for each lesson a link to th
 |14 | `T14_CaseWhen_Tb.vhd` | Demonstrates `case … when` statements (multi-way branching) in VHDL. | [How to use a Case-When statement in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=14) |
 |15 | `T15_Mux.vhd` | Implements a basic 2-to-1 multiplexer (design module). | [How to use Port Map instantiation in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=15) |
 |16 | `T16_GenericMux.vhd` / `T16_GenericMux_Tb.vhd` | Parameterised (generic) multiplexer design + its testbench. Shows use of generics. | [How to use Constants and Generic Map in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=16) |
-|17 | `T17_ClockedProcess_Tb.vhd` | Introduces synchronous logic: clocked processes, rising_edge, flip-flops. | [How to create a Clocked Process in VHDL](https://www.youtube.com/watch?v=z6Biw6xai1E) :contentReference[oaicite:5]{index=5} |
+|17 | `T17_ClockedProcess_Tb.vhd` | Introduces synchronous logic: clocked processes, rising_edge, flip-flops. | [How to create a Clocked Process in VHDL](https://www.youtube.com/watch?v=z6Biw6xai1E)  |
 |18 | `T18_Timer.vhd` / `T18_Timer_Tb.vhd` | Builds a timer module using clocked logic, demonstrates simulation time vs real-time. | [How to create a Timer in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=18) |
 |19 | `T19_Procedure_Tb.vhd` | Introduces procedures (sub-programs) in VHDL: code reuse and modularity. | [How to use a Procedure in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=19) |
 |20 | `T20_FiniteStateMachine_Tb.vhd` | Demonstrates a Finite State Machine (FSM) design and testbench (e.g., traffic-lights). | [How to create a Finite-State Machine in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=20) |
@@ -47,7 +47,7 @@ Below you’ll find a description of each file, and for each lesson a link to th
 
 ## How to Run the Simulations  
 
-1. Install a VHDL simulator (e.g., ModelSim or QuestaSim). :contentReference[oaicite:8]{index=8}  
+1. Install a VHDL simulator (e.g., ModelSim or QuestaSim). 
 2. Create or open a project, include all `.vhd` files.  
 3. Compile all source modules and testbenches.  
 4. Set the desired testbench (e.g., `T20_FiniteStateMachine_Tb.vhd`) as the top‐level entity.  
@@ -60,12 +60,12 @@ Below you’ll find a description of each file, and for each lesson a link to th
 
 Once you’ve completed all 23 lessons, you should have a solid grasp of the fundamentals of VHDL and simulation. The next steps recommended by VHDLwhiz:  
 - Move from simulation to hardware: pick a low-cost FPGA board and synthesise your designs. :contentReference[oaicite:9]{index=9}  
-- Explore the “FPGA and VHDL Fast-Track” course for hands-on hardware usage. :contentReference[oaicite:10]{index=10}  
+- Explore the “FPGA and VHDL Fast-Track” course for hands-on hardware usage.
 
 ---
 
 ## Credits  
-Course created by VHDLwhiz – see [vhdlwhiz.com](https://vhdlwhiz.com) for more. :contentReference[oaicite:11]{index=11}  
+Course created by VHDLwhiz – see [vhdlwhiz.com](https://vhdlwhiz.com) for more. 
 
 ---
 
