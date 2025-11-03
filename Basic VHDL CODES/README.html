@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic VHDL Course – VHDLwhiz</title>
+<style>
+  body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    margin: 2em auto;
+    max-width: 1000px;
+  }
+  h1, h2 {
+    color: #1e40af;
+    text-align: center;
+  }
+  h1 {
+    border-bottom: 4px solid #2563eb;
+    padding-bottom: 10px;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .toc {
+    background-color: #e0f2fe;
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  .toc h2 {
+    color: #0f172a;
+    text-align: left;
+    margin-top: 0;
+  }
+  .toc ul {
+    columns: 2;
+    list-style: none;
+    padding-left: 0;
+  }
+  .toc li {
+    margin: 6px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  th {
+    background-color: #1d4ed8;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+  }
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+  tr:nth-child(even) {
+    background-color: #f1f5f9;
+  }
+  tr:hover {
+    background-color: #e0f2fe;
+  }
+  .footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #64748b;
+  }
+</style>
+</head>
+<body>
+
+<h1>Basic VHDL Course by VHDLwhiz</h1>
+<p style="text-align:center">
+  This page describes each VHDL source and testbench file in the folder:  
+  <strong><code>Basic VHDL CODES/</code></strong><br>
+  Course reference: <a href="https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV" target="_blank">VHDLwhiz Basic VHDL Course Playlist</a>
+</p>
+
+<div class="toc">
+  <h2>📘 Table of Contents</h2>
+  <ul>
+    <li><a href="#lesson1">Lesson 1 – Hello World</a></li>
+    <li><a href="#lesson2">Lesson 2 – Wait For</a></li>
+    <li><a href="#lesson3">Lesson 3 – Loop</a></li>
+    <li><a href="#lesson4">Lesson 4 – For Loop</a></li>
+    <li><a href="#lesson5">Lesson 5 – While Loop</a></li>
+    <li><a href="#lesson6">Lesson 6 – Signals</a></li>
+    <li><a href="#lesson7">Lesson 7 – Wait On / Until</a></li>
+    <li><a href="#lesson8">Lesson 8 – If / Else</a></li>
+    <li><a href="#lesson9">Lesson 9 – Sensitivity List</a></li>
+    <li><a href="#lesson10">Lesson 10 – StdLogic</a></li>
+    <li><a href="#lesson11">Lesson 11 – StdLogicVector</a></li>
+    <li><a href="#lesson12">Lesson 12 – Signed / Unsigned</a></li>
+    <li><a href="#lesson13">Lesson 13 – Concurrent Processes</a></li>
+    <li><a href="#lesson14">Lesson 14 – Case When</a></li>
+    <li><a href="#lesson15">Lesson 15 – MUX</a></li>
+    <li><a href="#lesson16">Lesson 16 – Generic MUX</a></li>
+    <li><a href="#lesson17">Lesson 17 – Clocked Process</a></li>
+    <li><a href="#lesson18">Lesson 18 – Timer</a></li>
+    <li><a href="#lesson19">Lesson 19 – Procedure</a></li>
+    <li><a href="#lesson20">Lesson 20 – FSM / Traffic Lights</a></li>
+    <li><a href="#lesson21">Lesson 21 – Function</a></li>
+    <li><a href="#lesson22">Lesson 22 – Impure Function</a></li>
+    <li><a href="#lesson23">Lesson 23 – Procedure in Process</a></li>
+  </ul>
+</div>
+
+<h2>📂 Lesson Details</h2>
+
+<table>
+  <tr><th>File</th><th>Description</th><th>Video</th></tr>
+
+  <tr id="lesson1">
+    <td><a href="Basic%20VHDL%20CODES/T01_HelloWorldTb.vhd">T01_HelloWorldTb.vhd</a></td>
+    <td>Intro testbench printing “Hello World” to verify simulation setup.</td>
+    <td><a href="https://www.youtube.com/watch?v=h4ZXge1BE80" target="_blank">Hello World in VHDL</a></td>
+  </tr>
+  <tr id="lesson2">
+    <td><a href="Basic%20VHDL%20CODES/T02_WaitForTb.vhd">T02_WaitForTb.vhd</a></td>
+    <td>Demonstrates use of <code>wait for</code> statement for simulation delays.</td>
+    <td><a href="https://www.youtube.com/watch?v=WhjAZq5MxnE" target="_blank">Wait For Statement</a></td>
+  </tr>
+  <tr id="lesson3">
+    <td><a href="Basic%20VHDL%20CODES/T03_LoopTb.vhd">T03_LoopTb.vhd</a></td>
+    <td>Shows generic <code>loop</code> and <code>exit</code> control.</td>
+    <td><a href="https://www.youtube.com/watch?v=_mP4zRjUgWQ" target="_blank">Loop and Exit</a></td>
+  </tr>
+  <tr id="lesson4">
+    <td><a href="Basic%20VHDL%20CODES/T04_ForLoopTb.vhd">T04_ForLoopTb.vhd</a></td>
+    <td>Demonstrates <code>for</code> loops in VHDL testbenches.</td>
+    <td><a href="https://www.youtube.com/watch?v=OjIHfYkQUYA" target="_blank">For Loop</a></td>
+  </tr>
+  <tr id="lesson5">
+    <td><a href="Basic%20VHDL%20CODES/T05_WhileLoopTb.vhd">T05_WhileLoopTb.vhd</a></td>
+    <td>Illustrates <code>while</code> loops and conditional iteration.</td>
+    <td><a href="https://www.youtube.com/watch?v=KPCYwJzjH74" target="_blank">While Loop</a></td>
+  </tr>
+  <tr id="lesson6">
+    <td><a href="Basic%20VHDL%20CODES/T06_SignalTb.vhd">T06_SignalTb.vhd</a></td>
+    <td>Explains signals, assignments, and simulation updates.</td>
+    <td><a href="https://www.youtube.com/watch?v=4X5L4cZkGA8" target="_blank">Signals in VHDL</a></td>
+  </tr>
+  <tr id="lesson7">
+    <td><a href="Basic%20VHDL%20CODES/T07_WaitOnUntilTb.vhd">T07_WaitOnUntilTb.vhd</a></td>
+    <td>Shows <code>wait on</code> and <code>wait until</code> for process control.</td>
+    <td><a href="https://www.youtube.com/watch?v=xZ7Z7VW58Zg" target="_blank">Wait On / Wait Until</a></td>
+  </tr>
+  <tr id="lesson8">
+    <td><a href="Basic%20VHDL%20CODES/T08_If_else_Tb.vhd">T08_If_else_Tb.vhd</a></td>
+    <td>Demonstrates <code>if-elsif-else</code> conditional statements.</td>
+    <td><a href="https://www.youtube.com/watch?v=7af05x13TK4" target="_blank">If / Else</a></td>
+  </tr>
+  <tr id="lesson9">
+    <td><a href="Basic%20VHDL%20CODES/T09_SensitivityProcessList_Tb.vhd">T09_SensitivityProcessList_Tb.vhd</a></td>
+    <td>Process sensitivity list behavior and event triggers.</td>
+    <td><a href="https://www.youtube.com/watch?v=E-kEDW0nN7Y" target="_blank">Sensitivity List</a></td>
+  </tr>
+  <tr id="lesson10">
+    <td><a href="Basic%20VHDL%20CODES/T10_StdLogic_Tb.vhd">T10_StdLogic_Tb.vhd</a></td>
+    <td>Introduces <code>std_logic</code> types and multi-valued logic.</td>
+    <td><a href="https://www.youtube.com/watch?v=99yD4lbsh5g" target="_blank">StdLogic</a></td>
+  </tr>
+  <tr id="lesson11">
+    <td><a href="Basic%20VHDL%20CODES/T11_StdLogicVector_Tb.vhd">T11_StdLogicVector_Tb.vhd</a></td>
+    <td>Vector types and bitwise operations on signals.</td>
+    <td><a href="https://www.youtube.com/watch?v=wW6F_Mbf2RE" target="_blank">StdLogicVector</a></td>
+  </tr>
+  <tr id="lesson12">
+    <td><a href="Basic%20VHDL%20CODES/T12_SignedUnsigned_Tb.vhd">T12_SignedUnsigned_Tb.vhd</a></td>
+    <td>Shows <code>signed</code> / <code>unsigned</code> numeric types and conversions.</td>
+    <td><a href="https://www.youtube.com/watch?v=dXeBrvwhE1E" target="_blank">Signed/Unsigned</a></td>
+  </tr>
+  <tr id="lesson13">
+    <td><a href="Basic%20VHDL%20CODES/T13_ConcurrentProcs_Tb.vhd">T13_ConcurrentProcs_Tb.vhd</a></td>
+    <td>Explains concurrent vs sequential processes.</td>
+    <td><a href="https://www.youtube.com/watch?v=8FjIArd5jD8" target="_blank">Concurrent Processes</a></td>
+  </tr>
+  <tr id="lesson14">
+    <td><a href="Basic%20VHDL%20CODES/T14_CaseWhen_Tb.vhd">T14_CaseWhen_Tb.vhd</a></td>
+    <td>Multi-way decision using <code>case when</code>.</td>
+    <td><a href="https://www.youtube.com/watch?v=Hr7eCXTuCqM" target="_blank">Case / When</a></td>
+  </tr>
+  <tr id="lesson15">
+    <td><a href="Basic%20VHDL%20CODES/T15_Mux.vhd">T15_Mux.vhd</a></td>
+    <td>Implements a simple 2-to-1 multiplexer.</td>
+    <td><a href="https://www.youtube.com/watch?v=g-r-4BB6K9U" target="_blank">MUX Design</a></td>
+  </tr>
+  <tr id="lesson16">
+    <td><a href="Basic%20VHDL%20CODES/T16_GenericMux.vhd">T16_GenericMux.vhd</a></td>
+    <td>Parameterised generic MUX design and testbench.</td>
+    <td><a href="https://www.youtube.com/watch?v=HgZ9vtxEk6o" target="_blank">Generic MUX & Generics</a></td>
+  </tr>
+  <tr id="lesson17">
+    <td><a href="Basic%20VHDL%20CODES/T17_ClockedProcess_Tb.vhd">T17_ClockedProcess_Tb.vhd</a></td>
+    <td>Shows synchronous clocked process and flip-flop behavior.</td>
+    <td><a href="https://www.youtube.com/watch?v=z6Biw6xai1E" target="_blank">Clocked Process</a></td>
+  </tr>
+  <tr id="lesson18">
+    <td><a href="Basic%20VHDL%20CODES/T18_Timer.vhd">T18_Timer.vhd</a></td>
+    <td>Implements a timer using a clock signal.</td>
+    <td><a href="https://www.youtube.com/watch?v=biJRWKcz7cQ" target="_blank">Timer</a></td>
+  </tr>
+  <tr id="lesson19">
+    <td><a href="Basic%20VHDL%20CODES/T19_Procedure_Tb.vhd">T19_Procedure_Tb.vhd</a></td>
+    <td>Introduces reusable procedures in VHDL.</td>
+    <td><a href="https://www.youtube.com/watch?v=wruJtTd0n8M" target="_blank">Procedures</a></td>
+  </tr>
+  <tr id="lesson20">
+    <td><a href="Basic%20VHDL%20CODES/T20_FiniteStateMachine_Tb.vhd">T20_FiniteStateMachine_Tb.vhd</a></td>
+    <td>Finite State Machine example: Traffic light controller.</td>
+    <td><a href="https://www.youtube.com/watch?v=5nW2tPtL1tE" target="_blank">FSM / Traffic Lights</a></td>
+  </tr>
+  <tr id="lesson21">
+    <td><a href="Basic%20VHDL%20CODES/T21_Function_Tb.vhd">T21_Function_Tb.vhd</a></td>
+    <td>Shows how to use pure functions for reusable logic.</td>
+    <td><a href="https://www.youtube.com/watch?v=GnmU-0RpRuA" target="_blank">Functions</a></td>
+  </tr>
+  <tr id="lesson22">
+    <td><a href="Basic%20VHDL%20CODES/T22_ImpureFunction_Tb.vhd">T22_ImpureFunction_Tb.vhd</a></td>
+    <td>Demonstrates impure functions and random value generation.</td>
+    <td><a href="https://www.youtube.com/watch?v=akxD5o03wXc" target="_blank">Impure Functions</a></td>
+  </tr>
+  <tr id="lesson23">
+    <td><a href="Basic%20VHDL%20CODES/T23_ProcedureInProcess_Tb.vhd">T23_ProcedureInProcess_Tb.vhd</a></td>
+    <td>Shows how to call procedures inside processes for structured design.</td>
+    <td><a href="https://www.youtube.com/watch?v=d5T4MNYTPOU" target="_blank">Procedure in Process</a></td>
+  </tr>
+</table>
+
+<div class="footer">
+  <p>© VHDLwhiz – Basic VHDL Course<br>
+  Compiled and formatted by Eng. Mohamed Maged • 2025</p>
+</div>
+
+</body>
+</html>
