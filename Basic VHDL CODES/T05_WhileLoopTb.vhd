@@ -1,0 +1,18 @@
+ENTITY T05_WhileLoopTb IS
+END T05_WhileLoopTb;
+
+
+ARCHITECTURE T05_WhileLoopArch of T05_WhileLoopTb IS
+BEGIN 
+	PROCESS IS
+	VARIABLE i :INTEGER := 0;
+	BEGIN 
+		WHILE i < 10 LOOP
+			REPORT "i=" & integer'image(i);
+			i := i + 1;
+		END LOOP;
+		WAIT;
+ 	END PROCESS;
+
+
+END T05_WhileLoopArch;
