@@ -1,7 +1,7 @@
 # Basic VHDL Course — README  
 *Course by VHDLwhiz*  
-This repository contains the VHDL source & test-bench files used in the **Basic VHDL Course** by VHDLwhiz. :contentReference[oaicite:1]{index=1}  
-Below you’ll find a description of each file, and for each lesson a link to the corresponding YouTube video in the playlist. :contentReference[oaicite:2]{index=2}  
+This repository contains the VHDL source & test-bench files used in the **Basic VHDL Course** by VHDLwhiz.
+Below you’ll find a description of each file, and for each lesson a link to the corresponding YouTube video in the playlist.
 
 ---
 
@@ -9,10 +9,10 @@ Below you’ll find a description of each file, and for each lesson a link to th
 
 | # | File | Description | YouTube Video |
 |---|------|-------------|--------------|
-| 1 | `T01_HelloWorldTb.vhd` | Introductory testbench: print "Hello World" in simulation to verify setup. | [How to create your first VHDL program: Hello World!](https://www.youtube.com/watch?v=h4ZXge1BE80) :contentReference[oaicite:3]{index=3} |
+| 1 | `T01_HelloWorldTb.vhd` | Introductory testbench: print "Hello World" in simulation to verify setup. | [How to create your first VHDL program: Hello World!](https://www.youtube.com/watch?v=h4ZXge1BE80)  |
 | 2 | `T02_WaitForTb.vhd` | Demonstrates the `wait for` statement (i.e., delaying simulation time) in VHDL. | [How to delay time in VHDL: Wait For](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=2) |
 | 3 | `T03_LoopTb.vhd` | Shows how to use a general `loop` construct and `exit` in a testbench. | [How to use Loop and Exit in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=3) |
-| 4 | `T04_ForLoopTb.vhd` | Demonstrates the `for`-loop: iterating a fixed number of times. | [How to use a For-Loop in VHDL](https://www.youtube.com/watch?v=OjIHfYkQUYA) :contentReference[oaicite:4]{index=4} |
+| 4 | `T04_ForLoopTb.vhd` | Demonstrates the `for`-loop: iterating a fixed number of times. | [How to use a For-Loop in VHDL](https://www.youtube.com/watch?v=OjIHfYkQUYA)  |
 | 5 | `T05_WhileLoopTb.vhd` | Introduces the `while`-loop construct in VHDL testbench context. | [How to use a While-Loop in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=5) |
 | 6 | `T06_SignalTb.vhd` | Explains usage of `signal` declarations, assignments and simple signal behaviour. | [How a Signal is different from a Variable in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=6) |
 | 7 | `T07_WaitOnUntilTb.vhd` | Demonstrates `wait on` and `wait until` statements for sensitivity control. | [How to use Wait On and Wait Until in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=7) |
@@ -59,7 +59,7 @@ Below you’ll find a description of each file, and for each lesson a link to th
 ## What’s Next  
 
 Once you’ve completed all 23 lessons, you should have a solid grasp of the fundamentals of VHDL and simulation. The next steps recommended by VHDLwhiz:  
-- Move from simulation to hardware: pick a low-cost FPGA board and synthesise your designs. :contentReference[oaicite:9]{index=9}  
+- Move from simulation to hardware: pick a low-cost FPGA board and synthesise your designs. 
 - Explore the “FPGA and VHDL Fast-Track” course for hands-on hardware usage.
 
 ---
