@@ -1,77 +1,150 @@
-# Basic VHDL Course — README  
-*Course by VHDLwhiz*  
-This repository contains the VHDL source & test-bench files used in the **Basic VHDL Course** by VHDLwhiz. :contentReference[oaicite:1]{index=1}  
-Below you’ll find a description of each file, and for each lesson a link to the corresponding YouTube video in the playlist. :contentReference[oaicite:2]{index=2}  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic VHDL Course by VHDLwhiz - README</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fb;
+      color: #333;
+      margin: 0;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #004080;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #e8f0ff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .toc a {
+      font-weight: 500;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Basic VHDL Course by VHDLwhiz</h1>
 
----
+  <h2>📑 Table of Contents</h2>
+  <ul class="toc">
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#files">Lesson Files Overview</a></li>
+    <li><a href="#usage">How to Simulate</a></li>
+    <li><a href="#extra">Additional Files</a></li>
+  </ul>
 
-## Files and Lesson Descriptions  
+  <h2 id="intro">🎯 Introduction</h2>
+  <p>
+    This folder contains <strong>VHDL source and testbench files</strong> from the <em>Basic VHDL Course</em> by
+    <a href="https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV" target="_blank">VHDLwhiz</a>.
+    Each file demonstrates a specific concept from the tutorials. Files are intended for simulation in tools such as
+    <strong>ModelSim</strong> or <strong>Vivado Simulator</strong>.
+  </p>
 
-| # | File | Description | YouTube Video |
-|---|------|-------------|--------------|
-| 1 | `T01_HelloWorldTb.vhd` | Introductory testbench: print "Hello World" in simulation to verify setup. | [How to create your first VHDL program: Hello World!](https://www.youtube.com/watch?v=h4ZXge1BE80) :contentReference[oaicite:3]{index=3} |
-| 2 | `T02_WaitForTb.vhd` | Demonstrates the `wait for` statement (i.e., delaying simulation time) in VHDL. | [How to delay time in VHDL: Wait For](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=2) |
-| 3 | `T03_LoopTb.vhd` | Shows how to use a general `loop` construct and `exit` in a testbench. | [How to use Loop and Exit in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=3) |
-| 4 | `T04_ForLoopTb.vhd` | Demonstrates the `for`-loop: iterating a fixed number of times. | [How to use a For-Loop in VHDL](https://www.youtube.com/watch?v=OjIHfYkQUYA) :contentReference[oaicite:4]{index=4} |
-| 5 | `T05_WhileLoopTb.vhd` | Introduces the `while`-loop construct in VHDL testbench context. | [How to use a While-Loop in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=5) |
-| 6 | `T06_SignalTb.vhd` | Explains usage of `signal` declarations, assignments and simple signal behaviour. | [How a Signal is different from a Variable in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=6) |
-| 7 | `T07_WaitOnUntilTb.vhd` | Demonstrates `wait on` and `wait until` statements for sensitivity control. | [How to use Wait On and Wait Until in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=7) |
-| 8 | `T08_If_else_Tb.vhd` | Shows `if … elsif … else` branching in VHDL processes. | [How to use conditional statements in VHDL: If-Then-Elsif-Else](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=8) |
-| 9 | `T09_SensitivityProcessList_Tb.vhd` | Discusses process sensitivity lists and how they impact simulation behaviour. | [How to create a process with a Sensitivity List in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=9) |
-|10 | `T10_StdLogic_Tb.vhd` | Introduces the `std_logic` type: signal value resolution, logic levels, etc. | [How to use the most common VHDL type: std_logic](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=10) |
-|11 | `T11_StdLogicVector_Tb.vhd` | Demonstrates `std_logic_vector`: vector signals, operations and testbench usage. | [How to create a signal vector in VHDL: std_logic_vector](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=11) |
-|12 | `T12_SignedUnsigned_Tb.vhd` | Covers `signed` and `unsigned` types (arithmetic on bit-vectors) and conversions. | [How to use Signed and Unsigned in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=12) |
-|13 | `T13_ConcurrentProcs_Tb.vhd` | Explores concurrent statements vs sequential processes in VHDL. | [How to create a Concurrent Statement in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=13) |
-|14 | `T14_CaseWhen_Tb.vhd` | Demonstrates `case … when` statements (multi-way branching) in VHDL. | [How to use a Case-When statement in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=14) |
-|15 | `T15_Mux.vhd` | Implements a basic 2-to-1 multiplexer (design module). | [How to use Port Map instantiation in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=15) |
-|16 | `T16_GenericMux.vhd` / `T16_GenericMux_Tb.vhd` | Parameterised (generic) multiplexer design + its testbench. Shows use of generics. | [How to use Constants and Generic Map in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=16) |
-|17 | `T17_ClockedProcess_Tb.vhd` | Introduces synchronous logic: clocked processes, rising_edge, flip-flops. | [How to create a Clocked Process in VHDL](https://www.youtube.com/watch?v=z6Biw6xai1E) :contentReference[oaicite:5]{index=5} |
-|18 | `T18_Timer.vhd` / `T18_Timer_Tb.vhd` | Builds a timer module using clocked logic, demonstrates simulation time vs real-time. | [How to create a Timer in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=18) |
-|19 | `T19_Procedure_Tb.vhd` | Introduces procedures (sub-programs) in VHDL: code reuse and modularity. | [How to use a Procedure in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=19) |
-|20 | `T20_FiniteStateMachine_Tb.vhd` | Demonstrates a Finite State Machine (FSM) design and testbench (e.g., traffic-lights). | [How to create a Finite-State Machine in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=20) |
-|21 | `T21_Function_Tb.vhd` | Introduces functions (pure) in VHDL: returning computed values, modular code. | [How to use a Function in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=21) |
-|22 | `T22_ImpureFunction_Tb.vhd` | Demonstrates impure functions in VHDL: usage, when required, and limitations. | [How to use an Impure Function in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=22) |
-|23 | `T23_ProcedureInProcess_Tb.vhd` | Shows how to use procedures *within* processes (nested usage, design patterns). | [How to use a Procedure in a Process in VHDL](https://www.youtube.com/playlist?list=PLIbRYKjjYOPkhpxnkQ0fwTXnmgsiCMcVV&index=23) |
+  <h2 id="files">🔹 Lesson Files Overview</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>Description</th>
+        <th>Video Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="Basic VHDL CODES/T01_HelloWorldTb.vhd">T01_HelloWorldTb.vhd</a></td><td>First simulation: simple testbench printing output to verify ModelSim setup.</td><td><a href="https://youtu.be/a8w2TqWiUzo">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T02_WaitForTb.vhd">T02_WaitForTb.vhd</a></td><td>Demonstrates usage of <code>wait for</code> statement to create delays.</td><td><a href="https://youtu.be/kknhHuDck7s">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T03_LoopTb.vhd">T03_LoopTb.vhd</a></td><td>Shows <code>loop</code> structures and repetitive behavior in testbenches.</td><td><a href="https://youtu.be/2tzLE5OquyU">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T04_ForLoopTb.vhd">T04_ForLoopTb.vhd</a></td><td>Using <code>for</code> loops for controlled iteration.</td><td><a href="https://youtu.be/_kpVdV0sxMw">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T05_WhileLoopTb.vhd">T05_WhileLoopTb.vhd</a></td><td>Illustrates <code>while</code> loops and conditions in VHDL.</td><td><a href="https://youtu.be/jmdecbPQI9g">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T06_SignalTb.vhd">T06_SignalTb.vhd</a></td><td>Introduction to <code>signal</code> usage and process communication.</td><td><a href="https://youtu.be/3SMdRCbH6rM">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T07_WaitOnUntilTb.vhd">T07_WaitOnUntilTb.vhd</a></td><td>Demonstrates <code>wait on</code> and <code>wait until</code> for event control.</td><td><a href="https://youtu.be/1v6iWgBTydk">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T08_If_else_Tb.vhd">T08_If_else_Tb.vhd</a></td><td>Conditional branching with <code>if</code>, <code>elsif</code>, and <code>else</code>.</td><td><a href="https://youtu.be/D5nfrIgj_LI">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T09_SensitivityProcessList_Tb.vhd">T09_SensitivityProcessList_Tb.vhd</a></td><td>Explains process sensitivity lists and simulation triggers.</td><td><a href="https://youtu.be/EZFRbzs5q3A">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T10_StdLogic_Tb.vhd">T10_StdLogic_Tb.vhd</a></td><td>Shows the <code>std_logic</code> data type and value set.</td><td><a href="https://youtu.be/lPhGSPMcYcA">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T11_StdLogicVector_Tb.vhd">T11_StdLogicVector_Tb.vhd</a></td><td>Demonstrates <code>std_logic_vector</code> and basic operations.</td><td><a href="https://youtu.be/4B2BgU2bSH8">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T12_SignedUnsigned_Tb.vhd">T12_SignedUnsigned_Tb.vhd</a></td><td>Arithmetic with <code>signed</code> and <code>unsigned</code> types.</td><td><a href="https://youtu.be/TTIgA4g4hbI">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T13_ConcurrentProcs_Tb.vhd">T13_ConcurrentProcs_Tb.vhd</a></td><td>Concurrent statements and parallel execution.</td><td><a href="https://youtu.be/Q5GgS_Y5Uos">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T14_CaseWhen_Tb.vhd">T14_CaseWhen_Tb.vhd</a></td><td>Multi-branch logic using <code>case</code> statements.</td><td><a href="https://youtu.be/72IgeF4h0us">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T15_Mux.vhd">T15_Mux.vhd</a></td><td>Implements a simple 2-to-1 multiplexer.</td><td><a href="https://youtu.be/VQ42iG8tqUI">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T16_GenericMux.vhd">T16_GenericMux.vhd</a></td><td>Parameterizable multiplexer design using generics.</td><td><a href="https://youtu.be/YWjRkzluKX0">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T17_ClockedProcess_Tb.vhd">T17_ClockedProcess_Tb.vhd</a></td><td>Introduction to synchronous design using clocked processes.</td><td><a href="https://youtu.be/E3zD2bbxYq0">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T18_Timer_Tb.vhd">T18_Timer_Tb.vhd</a></td><td>Timer design and simulation using a clock signal.</td><td><a href="https://youtu.be/EweqI1Fln9E">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T19_Procedure_Tb.vhd">T19_Procedure_Tb.vhd</a></td><td>Using <code>procedures</code> for code reuse.</td><td><a href="https://youtu.be/_RV-4C_5dlY">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T20_TrafficLights_Tb.vhd">T20_TrafficLights_Tb.vhd</a></td><td>Implements a Traffic Light Controller (Finite State Machine).</td><td><a href="https://youtu.be/Zz6xFXo0tk4">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T21_Function_Tb.vhd">T21_Function_Tb.vhd</a></td><td>Functions and return values in VHDL.</td><td><a href="https://youtu.be/UV0P63tDPK8">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T22_ImpureFunction_Tb.vhd">T22_ImpureFunction_Tb.vhd</a></td><td>Explains impure functions and their use cases.</td><td><a href="https://youtu.be/Flghy4R0Y4g">Watch</a></td></tr>
+      <tr><td><a href="Basic VHDL CODES/T23_ProcedureInProcess_Tb.vhd">T23_ProcedureInProcess_Tb.vhd</a></td><td>Shows calling procedures from inside processes.</td><td><a href="https://youtu.be/z2k4x7C5q2g">Watch</a></td></tr>
+    </tbody>
+  </table>
 
----
+  <h2 id="usage">▶️ How to Simulate</h2>
+  <ol>
+    <li>Open <strong>ModelSim</strong> or <strong>Vivado</strong>.</li>
+    <li>Create a new project and add all <code>.vhd</code> files from <em>Basic VHDL CODES/</em>.</li>
+    <li>Set the desired testbench (e.g., <code>T20_TrafficLights_Tb.vhd</code>) as the top-level entity.</li>
+    <li>Compile, then click <strong>Simulate &rarr; Run</strong>.</li>
+    <li>Use the <strong>Waveform</strong> window to view signal activity.</li>
+  </ol>
 
-## Additional/Support Files  
+  <h2 id="extra">🧠 Additional Files</h2>
+  <ul>
+    <li><strong>modelsim.ini</strong> – ModelSim environment configuration.</li>
+    <li><strong>vsim.wlf</strong> – Simulation waveform log (auto-generated).</li>
+    <li><strong>work/</strong> – Compilation library folder created automatically.</li>
+    <li><strong>*.mpf / *.cr.mti</strong> – ModelSim project and compile records.</li>
+  </ul>
 
-- `modelsim.ini` — Configuration file for the simulator (e.g., library mapping).  
-- `vsim.wlf` — Waveform log file generated by simulation.  
-- `Tasks_Tutorial.mpf` / `.cr.mti` — Project files for ModelSim (compile record, etc.).  
-- `work/` directory — The working library directory created by ModelSim.  
-- Backup files ending in `.bak` — Backups of source/testbench files (for versioning).  
-
----
-
-## How to Run the Simulations  
-
-1. Install a VHDL simulator (e.g., ModelSim or QuestaSim). :contentReference[oaicite:8]{index=8}  
-2. Create or open a project, include all `.vhd` files.  
-3. Compile all source modules and testbenches.  
-4. Set the desired testbench (e.g., `T20_FiniteStateMachine_Tb.vhd`) as the top‐level entity.  
-5. Run the simulation, view waveforms in the GUI, and ensure expected behaviour.  
-6. Use the YouTube video links for each lesson as reference if you need guidance.  
-
----
-
-## What’s Next  
-
-Once you’ve completed all 23 lessons, you should have a solid grasp of the fundamentals of VHDL and simulation. The next steps recommended by VHDLwhiz:  
-- Move from simulation to hardware: pick a low-cost FPGA board and synthesise your designs. :contentReference[oaicite:9]{index=9}  
-- Explore the “FPGA and VHDL Fast-Track” course for hands-on hardware usage. :contentReference[oaicite:10]{index=10}  
-
----
-
-## Credits  
-Course created by VHDLwhiz – see [vhdlwhiz.com](https://vhdlwhiz.com) for more. :contentReference[oaicite:11]{index=11}  
-
----
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/mohamed-maged-1237981b4" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/mohamed-maged-1237981b4" height="30" width="40" /></a>
-<a href="https://www.youtube.com/channel/UCqFdD_fUftFl9dtfEshGGYg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@mohamedmaged7686" height="35" width="40" /></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.maged.khalil1@gmail.com" target="blank"><img align="center" src="https://github.com/Eng-Mohamed-Maged/Eng-Mohamed-Maged/blob/main/gmail.svg" height="38" width="40" /></a>
-</p>
+  <div class="footer">
+    <p>Created for educational purposes based on <a href="https://vhdlwhiz.com/" target="_blank">VHDLwhiz</a> tutorials.<br>
+    Design & README layout by Eng. Mohamed Maged.</p>
+  </div>
+</body>
+</html>
